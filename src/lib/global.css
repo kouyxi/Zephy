@@ -1,12 +1,16 @@
 :root {
-	--heading-font: 'Palanquin Dark' sans-serif;
-	--body-font: 'Open Sans' sans-serif;
+	--heading-font: 'Lato', sans-serif;
+	--body-font: 'Open Sans', sans-serif;
 	--text: #2f4858;
-	--bg: #e0f0ec;
+	--bg: #ececec;
 	--subtle: #e0e5e9;
 	--subtle-2: #ccdbe7;
 	--feat: #ff3e00;
 	--box-shadow: 0px 5px 15px rgba(0 0, 0, 15);
+	--color-1: #adbbc6;
+	--color-2: #8a8fa3;
+	--color-3: #374254;
+	--color-4: #0e1424;
 }
 
 /* CSS reset */
@@ -84,5 +88,24 @@ button {
 	margin: auto;
 	padding-left: 20px;
 	padding-right: 20px;
-	max-width: 980px;
+	max-width: 1280px;
+}
+
+.btn {
+	font-family: var(--heading-font);
+	background-color: #fff;
+	padding: 12px 24px;
+	border-radius: 60px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	width: fit-content;
+	transition: 250ms;
+	background-color: var(--color-3);
+	color: white;
+}
+.btn:hover {
+	background-color: var(--bg);
+	transition: 125ms;
+	color: var(--text);
 }

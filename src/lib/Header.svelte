@@ -1,7 +1,45 @@
-<h2>Header</h2>
+<script>
+	import Logo from './assets/Logo.svelte';
+</script>
+
+<header>
+	<div class="container header__container">
+		<nav>
+			<a href="/" class="logo"><Logo /> <span class="logo-text">Zephy</span></a>
+			<ul>
+				<li><a href="/projects">Projects</a></li>
+				<li><a href="/about">About us</a></li>
+				<li><a href="/team">Our Team</a></li>
+				<li><a href="/services">Services</a></li>
+			</ul>
+			<a href="/" class="btn">Get a Quote!</a>
+		</nav>
+	</div>
+</header>
 
 <style>
-	h2 {
-		color: orange;
+	header {
+		background: white;
+	}
+	nav {
+		padding-top: 16px;
+		padding-bottom: 16px;
+		display: flex;
+		font-family: var(--heading-font);
+		align-items: center;
+	}
+	nav ul {
+		display: flex;
+		gap: 30px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.logo {
+		display: flex;
+		gap: 5px;
+		align-items: center;
+	}
+	.logo-text {
+		font-size: 1.5rem;
 	}
 </style>
