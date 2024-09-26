@@ -1,3 +1,14 @@
+:root {
+	--heading-font: 'Palanquin Dark', sans-serif;
+	--body-font: 'Open Sans', sans-serif;
+	--text: #2f4858;
+	--bg: #e0f0ec;
+	--subtle: #e0e5e9;
+	--subtle-2: #ccdbe7;
+	--feat: #ff3e00;
+	--box-shadow: 0px 5px 15px rgba(0, 0, 0, 15);
+}
+
 body {
 	background-color: yellow;
 }
