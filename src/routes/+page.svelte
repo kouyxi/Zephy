@@ -11,7 +11,7 @@
 
 <style>
 	button {
-		background: var(--feat);
+		background: black;
 		color: white;
 	}
 </style>
