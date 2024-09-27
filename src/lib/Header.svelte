@@ -18,9 +18,6 @@
 </header>
 
 <style>
-	header {
-		background: white;
-	}
 	nav {
 		padding-top: 16px;
 		padding-bottom: 16px;
@@ -34,6 +31,21 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+	ul a {
+		position: relative;
+	}
+	ul a::before {
+		content: '';
+		width: 0%;
+		height: 1px;
+		position: absolute;
+		top: 22px;
+		background-color: black;
+	}
+	ul a:hover::before {
+		width: 100%;
+		transition: 200ms;
+	}
 	.logo {
 		display: flex;
 		gap: 5px;
@@ -41,5 +53,7 @@
 	}
 	.logo-text {
 		font-size: 1.5rem;
+		font-weight: 600;
+		font-family: var(--body-font);
 	}
 </style>

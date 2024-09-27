@@ -8,10 +8,3 @@
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 
 <button on:click={open}>Open</button>
-
-<style>
-	button {
-		background: black;
-		color: white;
-	}
-</style>
