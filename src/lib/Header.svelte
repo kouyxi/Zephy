@@ -1,4 +1,5 @@
 <script>
+	import { ChevronsRight } from 'lucide-svelte';
 	import Logo from './assets/Logo.svelte';
 </script>
 
@@ -12,7 +13,9 @@
 				<li><a href="/team">Our Team</a></li>
 				<li><a href="/services">Services</a></li>
 			</ul>
-			<a href="/" class="btn">Get a Quote!</a>
+			<a href="/" class="btn btn-header"
+				><span>Get a Quote!</span><span class="icon"><ChevronsRight /></span></a
+			>
 		</nav>
 	</div>
 </header>
@@ -55,5 +58,10 @@
 		font-size: 1.5rem;
 		font-weight: 600;
 		font-family: var(--body-font);
+	}
+	.btn-header {
+		display: flex;
+		align-items: center;
+		gap: 14px;
 	}
 </style>
